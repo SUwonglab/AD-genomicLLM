@@ -49,9 +49,11 @@ java -jar vcf2diploid_v0.2.6a/vcf2diploid.jar -outDir fasta/chr19  -id  003_S_10
 [vcf] - input vcf file from Step 2
 ```
 
-Note that the above command can only construct the personal genome (both maternal and paternal) per individual per chromosome. For the construction of multiple individuals, the above command should be iterated over all individuals. The reference genome for a chromosome can be downloaded from [here](https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/).
+Note that the above command can only construct the personal genome (both maternal and paternal) *per individual per chromosome*. For the construction of multiple individuals, the above command should be iterated over all individuals. The reference genome for a chromosome can be downloaded from [here](https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/).
 
-Above the above three steps, one should get `chr[CID]_[PID]_maternal.fa` and `chr[CID]_[PID]_paternal.fa` in the `fasta/chr[CID]` folder where `CID`,`PID` denotes chromosome ID and personal ID, respectively. In the above case, it is `chr19_003_S_1057_maternal.fa` and `chr19_003_S_1057_paternal.fa`.
+Above the above three steps, one should get `chr[CID]_[PID]_maternal.fa` and `chr[CID]_[PID]_paternal.fa` in the `fasta/chr[CID]` folder where `CID`,`PID` denotes chromosome ID and personal ID, respectively. 
+
+In the above example case, it is `chr19_003_S_1057_maternal.fa` and `chr19_003_S_1057_paternal.fa`.
 
 
 
