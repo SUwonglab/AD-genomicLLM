@@ -26,13 +26,32 @@ In our study, we downloaded whole genome sequencing (WGS) data from [ADNI databa
 
 ```shell
 vcftools --gzvcf ADNI.808_indiv.minGQ_21.pass.ADNI_ID.chr19.vcf.gz  --remove-indels --recode --recode-INFO-all --out SNPs_ADNI.808_indiv.minGQ_21.pass.ADNI_ID.chr19
+[gzvcf] - input compressed vcf file
+[out] - output file name (prefix)
 ```
 **Step 2: genotype to haplotype**
 
 ```shell
-java -jar preprocess/beagle.22Jul22.46e.jar gt=SNPs_ADNI.808_indiv.minGQ_21.pass.ADNI_ID.chr19.recode.vcf out=SNPs_ADNI.808_indiv.minGQ_21.pass.ADNI_ID.chr19.recode_hap map=plink/plink.chr19.GRCh37.map
+java -jar preprocess/beagle.22Jul22.46e.jar gt=SNPs_ADNI.808_indiv.minGQ_21.pass.ADNI_ID.chr19.recode.vcf out=SNPs_ADNI.808_indiv.minGQ_21.pass.ADNI_ID.chr19.recode_hap map=plink.GRCh37.map/plink.chr19.GRCh37.map
+[jar] - path the the beagle java program
+[gt] - input vcf file from Step 1
+[out] - output file name (prefix)
+```
+Note that the beagle .jar file is from [here](https://faculty.washington.edu/browning/beagle/beagle.html) and the plink full map files are from [here](https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/).
+
+**Step 3: personal genome construction**
+
+```shell
+java -jar vcf2diploid_v0.2.6a/vcf2diploid.jar -outDir fasta/chr19  -id  003_S_1057 -chr hg19/chr19.fa -vcf SNPs_ADNI.808_indiv.minGQ_21.pass.ADNI_ID.chr19.recode_hap.vcf.gz
+[outDir] - output directory
+[id] - personal ID
+[chr] - reference genome for a chromosome
+[vcf] - input vcf file from Step 2
 ```
 
+Note that the above command can only construct the personal genome (both maternal and paternal) per individual per chromosome. For the construction of multiple individuals, the above command should be iterated over all individuals. The reference genome for a chromosome can be downloaded from [here](https://hgdownload.soe.ucsc.edu/goldenPath/hg19/chromosomes/).
+
+Above the above three steps, one should get `chr[CID]_[PID]_maternal.fa` and `chr[CID]_[PID]_paternal.fa` in the `fasta/chr[CID]` folder where `CID`,`PID` denotes chromosome ID and personal ID, respectively. In the above case, it is `chr19_003_S_1057_maternal.fa` and `chr19_003_S_1057_paternal.fa`.
 
 
 
