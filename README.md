@@ -59,8 +59,16 @@ In the above example case, it is `chr19_003_S_1057_maternal.fa` and `chr19_003_S
 
 ## Extracting genomic LLM features
 
+```shell
+python3 get_llm_feats.py --gene_name [gene_name] --fasta_path [fasta_path] --refGene_path [refGene_path] --output_path [output_path]
+[gene_name] - gene of interest, e.g., APOE
+[fasta_path] - path to the fasta in the last step, e.g., fasta/chr19/chr19_003_S_1057_maternal.fa
+[refGene_path] -path to the refGene file, e.g., refGene_hg19_TSS.bed
+[output_path] - output path
+```
+The refGene file records the TSS information for each gene. The `output_path` will be created if not exist. A python .npy file with the same prefix (e.g., `chr19_003_S_1057_maternal.npy`) will be generated under the `output_path` folder.
 
-
+Note that the Python script is designed for per fasta file per gene. For extracting genomic LLM features for a large number of individuals, GPU is recommended to accelerate the process.
 
 ## Processing MRI image data
 
