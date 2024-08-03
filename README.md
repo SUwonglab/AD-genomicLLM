@@ -139,7 +139,7 @@ If you have any questions regarding our code or data, please do not hesitate to 
 # Cite
 If you used our work in your research, please consider citing our paper
 
-Qiao Liu, Wanwen Zeng, Lexin Li, Wing Hung Wong. Associating genotype to imaging and clinical phenotypes of Alzheimer’s disease by leveraging genomic large language model. arxRiv. 2024.
+Qiao Liu, Wanwen Zeng, Lexin Li, Wing Hung Wong. Associating genotype to imaging and clinical phenotypes of Alzheimer’s disease by leveraging genomic large language model [J]. arxRiv. 2024.
 
 # License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
