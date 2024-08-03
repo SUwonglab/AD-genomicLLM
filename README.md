@@ -114,7 +114,7 @@ We provided the extracted imaging phenotypes (thickness, area, and volume) of 24
 ## Associating genotype to imaging phenotypes
 
 ```shell
-python3 get_img_association.py --img_feat_type [img_feat_type] --gene_name [gene_name] --llm_path [llm_path] --refGene_path [refGene_path] --res_path [res_path]
+python3 get_img_association.py --gene_name [gene_name] --llm_path [llm_path] --refGene_path [refGene_path]
 [img_feat_type] - MRI image feature type. e.g., 'thickness'
 [gene_name] - gene of interest, e.g., APOE
 [llm_path] - path to the folder containing genomic LLM feature .npy files
@@ -123,4 +123,24 @@ python3 get_img_association.py --img_feat_type [img_feat_type] --gene_name [gene
 ```
 `res_path` will contain the association metric (e.g., Pearson's correlation) between a gene and a specific brain region of interest (ROI).
 
+## Associating genotype to clinical AD phenotypes
+
+```shell
+python3 get_AD_association.py --img_feat_type [img_feat_type] --gene_name [gene_name] --llm_path [llm_path] --refGene_path [refGene_path] --res_path [res_path]
+[gene_name] - gene of interest, e.g., APOE
+[llm_path] - path to the folder containing genomic LLM feature .npy files
+[refGene_path] -path to the refGene file, e.g., refGene_hg19_TSS.bed
+```
+The auROC will be calculated for binary AD trait.
+
+# Contact
+If you have any questions regarding our code or data, please do not hesitate to open an issue or directly contact me (liuqiao@stanford.edu).
+
+# Cite
+If you used our work in your research, please consider citing our paper
+
+Qiao Liu, Wanwen Zeng, Lexin Li, Wing Hung Wong. Associating genotype to imaging and clinical phenotypes of Alzheimer’s disease by leveraging genomic large language model. arxRiv. 2024.
+
+# License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
 
