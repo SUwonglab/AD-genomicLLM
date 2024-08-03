@@ -66,7 +66,7 @@ python3 get_llm_feats.py --gene_name [gene_name] --fasta_path [fasta_path] --ref
 [refGene_path] -path to the refGene file, e.g., refGene_hg19_TSS.bed
 [output_path] - output path
 ```
-The refGene file records the TSS information for each gene. The `output_path` will be created if not exist. A python .npy file with the same prefix (e.g., `chr19_003_S_1057_maternal.npy`) will be generated under the `output_path` folder.
+The refGene file records the TSS information for each gene. The `output_path` will be created if not exist. A python .npy file with the same prefix (e.g., `chr19_003_S_1057_maternal.npy`) will be generated under the `output_path` folder with the shape `(3,896,5313)`. It represents the 5313 features in 896 bins for 3 genomic LLM input regions. 
 
 Note that the Python script is designed for per fasta file per gene. For extracting genomic LLM features for a large number of individuals, GPU is recommended to accelerate the process.
 
