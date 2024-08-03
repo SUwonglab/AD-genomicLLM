@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import os
-import math
 import sys
 from sklearn.svm import SVR
 from sklearn.model_selection import KFold
@@ -12,14 +11,24 @@ from sklearn.preprocessing import StandardScaler
 import argparse
 
 def get_subjects_info(merge_info_path='ADNIMERGE_01Jun2023.csv', mri_file='MRI/ADNI1_Complete_1Yr_1.5T_7_18_2023.csv', wgs_file='wgs_subject_id.txt'):
-    merge_info = pd.read_csv(merge_info_path)  # Info for each participant
-
-    # Subjects who have screening, 6 month, and 12 month
+    """
+    Extracts subject information and labels.
+    
+    Parameters:
+    - merge_info_path: Path to ADNIMERGE CSV file.
+    - mri_file: Path to MRI data file.
+    - wgs_file: Path to WGS subject IDs file.
+    
+    Returns:
+    - subjects_selected: List of 246 selected subjects.
+    - labels: Diagnosis labels (0: Control, 1: MCI, 2: Dementia).
+    - labels_bl, labels_m06, labels_m12: Diagnosis labels at baseline, 6 months, and 12 months.
+    """
+    merge_info = pd.read_csv(merge_info_path)
     subject_ids_1y = np.unique([item.split(',')[1].strip('"') for item in open(mri_file).readlines()[1:]])
     wgs_subject_ids = [item.rstrip() for item in open(wgs_file).readlines()]
     subjects_selected = [item for item in wgs_subject_ids if item.upper() in subject_ids_1y]
 
-    # Labels: 0 - Control, 1 - MCI, 2 - Dementia
     labels, labels_bl, labels_m06, labels_m12 = [], [], [], []
 
     for each in subjects_selected:
@@ -41,21 +50,40 @@ def get_subjects_info(merge_info_path='ADNIMERGE_01Jun2023.csv', mri_file='MRI/A
         elif 'MCI' not in subject_info['DX'].to_list() and 'Dementia' not in subject_info['DX'].to_list():
             labels.append(0)
         else:
-            print('Error')
-
+            print('Error processing subject:', each_upper)
+            
     return subjects_selected, labels, labels_bl, labels_m06, labels_m12
 
-def get_enformer_feats(subjects_selected, llm_path, chrom, gene_name):
-    enformer_feats_p = np.stack([
-        np.load(f'{llm_path}/{chrom}_{item}_paternal.npy') for item in subjects_selected
-    ])
-    enformer_feats_m = np.stack([
-        np.load(f'{llm_path}/{chrom}_{item}_maternal.npy') for item in subjects_selected
-    ])
-    print('Enformer feature:', enformer_feats_p.shape, enformer_feats_m.shape)
+def get_enformer_features(subjects_selected, llm_path, chrom):
+    """
+    Loads Enformer features for given subjects.
+    
+    Parameters:
+    - subjects_selected: List of selected subjects.
+    - llm_path: Path to Enformer feature files.
+    - chrom: Chromosome identifier.
+    
+    Returns:
+    - enformer_feats_p: Features for paternal alleles.
+    - enformer_feats_m: Features for maternal alleles.
+    """
+    enformer_feats_p = np.stack([np.load(f'{llm_path}/{chrom}_{item}_paternal.npy') for item in subjects_selected])
+    enformer_feats_m = np.stack([np.load(f'{llm_path}/{chrom}_{item}_maternal.npy') for item in subjects_selected])
+    print('Enformer feature shapes:', enformer_feats_p.shape, enformer_feats_m.shape)
     return enformer_feats_p, enformer_feats_m
 
 def integrate_enformer_feats(enformer_feats_p, enformer_feats_m, n_components=7):
+    """
+    Reduces genomic LLM features using local PCA.
+    
+    Parameters:
+    - enformer_feats_p: Paternal features.
+    - enformer_feats_m: Maternal features.
+    - n_components: Number of PCA components.
+    
+    Returns:
+    - pca_feats: Reduced features concatenated from paternal and maternal.
+    """
     pca_feats_p, pca_feats_m = [], []
 
     for i in range(enformer_feats_p.shape[1]):
@@ -84,6 +112,16 @@ def get_imaging_feats(subjects_selected, img_feat_type):
     return regions, img_feat_sc, img_feat_m06, img_feat_m12
 
 def get_R_squared(input_feats, img_feat, regions, res_path, apply_norm=True, n_splits=5):
+    """
+    Evaluates the performance using a regresser.
+    
+    Parameters:
+    - input_feats: Input feature matrix.
+    - img_feat: Labels (continous).
+    - regions: brain ROIs.
+    - res_path: output path to save results.
+    - apply_norm: apply standard normalization to imaging features.
+    """
     if apply_norm:
         img_feat = StandardScaler().fit_transform(img_feat)
 
@@ -109,7 +147,7 @@ def get_R_squared(input_feats, img_feat, regions, res_path, apply_norm=True, n_s
             f_out.write(f'{regions[i]}\t{np.mean(r2_list)}\t{np.mean(pearsonr_list)}\t{np.mean(spearman_list)}\t{np.std(r2_list)}\t{np.std(pearsonr_list)}\t{np.std(spearman_list)}\n')
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Generate and evaluate Enformer features for a given gene.")
+    parser = argparse.ArgumentParser(description="Associate a gene to the human brain ROIs")
     parser.add_argument('--img_feat_type', type=str, required=True, help='Type of imaging feature.')
     parser.add_argument('--gene_name', type=str, required=True, help='Name of the gene.')
     parser.add_argument('--llm_path', type=str, required=True, help='Path to Enformer feature files.')
