@@ -111,4 +111,8 @@ aparcstats2table --subjects 003_S_1057_bs ... 007_S_0128_sc_bs  --hemi lh --meas
 We provided the extracted imaging phenotypes (thickness, area, and volume) of 246 individuals across 3 time points in the `MRI` folder.
 
 
+## Associating genotype to imaging phenotypes
+
+
+
 
