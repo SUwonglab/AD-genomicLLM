@@ -1,0 +1,77 @@
+485	0	ENCFF399ISP	/home/drk/tillage/datasets/human/dnase/encode/ENCSR626RVD/summary/coverage.w5	32	2	mean	DNASE:bipolar neuron originated from GM23338 treated with 0.5 ug/mL doxycycline hyclate for 4 days
+1444	0	ENCFF869ZLL	/home/drk/tillage/datasets/human/chip/encode/ENCSR000GGX/summary/ENCFF869ZLL.w5	32	2	mean	CHIP:H3K9me3:neuron originated from H9
+1644	0	ENCFF596ZSJ	/home/drk/tillage/datasets/human/chip/encode/ENCSR066BZZ/summary/ENCFF596ZSJ.w5	32	2	mean	CHIP:CTCF:bipolar neuron originated from GM23338 treated with 0.5 ug/mL doxycycline hyclate for 4 days
+1998	0	ENCFF043ACF	/home/drk/tillage/datasets/human/chip/encode/ENCSR175OYG/summary/ENCFF043ACF.w5	32	2	mean	CHIP:H3K9me2:bipolar neuron originated from GM23338 treated with 0.5 ug/mL doxycycline hyclate for 4 days
+2223	0	ENCFF380HMH	/home/drk/tillage/datasets/human/chip/encode/ENCSR247PYK/summary/ENCFF380HMH.w5	32	2	mean	CHIP:H3K9me3:bipolar neuron originated from GM23338 treated with 0.5 ug/mL doxycycline hyclate for 4 days
+2375	0	ENCFF011TOL	/home/drk/tillage/datasets/human/chip/encode/ENCSR301AEA/summary/ENCFF011TOL.w5	32	2	mean	CHIP:H3K4me1:bipolar neuron originated from GM23338 treated with 0.5 ug/mL doxycycline hyclate for 4 days
+2409	0	ENCFF548EWI	/home/drk/tillage/datasets/human/chip/encode/ENCSR314WYC/summary/ENCFF548EWI.w5	32	2	mean	CHIP:H3K4me3:neuron originated from H9
+2592	0	ENCFF643URD	/home/drk/tillage/datasets/human/chip/encode/ENCSR375IXS/summary/ENCFF643URD.w5	32	2	mean	CHIP:H3K36me3:bipolar neuron originated from GM23338 treated with 0.5 ug/mL doxycycline hyclate for 4 days
+2721	0	ENCFF286MEX	/home/drk/tillage/datasets/human/chip/encode/ENCSR418KUS/summary/ENCFF286MEX.w5	32	2	mean	CHIP:ZEB1:bipolar neuron originated from GM23338 treated with 0.5 ug/mL doxycycline hyclate for 4 days
+2896	0	ENCFF155KWT	/home/drk/tillage/datasets/human/chip/encode/ENCSR472SEY/summary/ENCFF155KWT.w5	32	2	mean	CHIP:H3K27me3:bipolar neuron originated from GM23338 treated with 0.5 ug/mL doxycycline hyclate for 4 days
+2938	0	ENCFF324STM	/home/drk/tillage/datasets/human/chip/encode/ENCSR484PTR/summary/ENCFF324STM.w5	32	2	mean	CHIP:H3K79me2:bipolar neuron originated from GM23338 treated with 0.5 ug/mL doxycycline hyclate for 4 days
+2951	0	ENCFF996IOS	/home/drk/tillage/datasets/human/chip/encode/ENCSR486ZKB/summary/ENCFF996IOS.w5	32	2	mean	CHIP:H3K36me3:neuron originated from H9
+3282	0	ENCFF869HFT	/home/drk/tillage/datasets/human/chip/encode/ENCSR592ETL/summary/ENCFF869HFT.w5	32	2	mean	CHIP:H3K9ac:bipolar neuron originated from GM23338 treated with 0.5 ug/mL doxycycline hyclate for 4 days
+3358	0	ENCFF205ZOQ	/home/drk/tillage/datasets/human/chip/encode/ENCSR619IUE/summary/ENCFF205ZOQ.w5	32	2	mean	CHIP:CTCF:bipolar neuron originated from GM23338 treated with 0.5 ug/mL doxycycline hyclate for 4 days
+3559	0	ENCFF424JDL	/home/drk/tillage/datasets/human/chip/encode/ENCSR683ORH/summary/ENCFF424JDL.w5	32	2	mean	CHIP:H3F3A:bipolar neuron originated from GM23338 treated with 0.5 ug/mL doxycycline hyclate for 4 days
+3566	0	ENCFF770SEF	/home/drk/tillage/datasets/human/chip/encode/ENCSR688OUZ/summary/ENCFF770SEF.w5	32	2	mean	CHIP:H3K27me3:neuron originated from H9
+3971	0	ENCFF950LSJ	/home/drk/tillage/datasets/human/chip/encode/ENCSR814TSD/summary/ENCFF950LSJ.w5	32	2	mean	CHIP:H3K4me1:neuron originated from H9
+3988	0	ENCFF965UTU	/home/drk/tillage/datasets/human/chip/encode/ENCSR821GUG/summary/ENCFF965UTU.w5	32	2	mean	CHIP:H4K20me1:bipolar neuron originated from GM23338 treated with 0.5 ug/mL doxycycline hyclate for 4 days
+3989	0	ENCFF357TFM	/home/drk/tillage/datasets/human/chip/encode/ENCSR821IAK/summary/ENCFF357TFM.w5	32	2	mean	CHIP:H3K4me2:bipolar neuron originated from GM23338 treated with 0.5 ug/mL doxycycline hyclate for 4 days
+4041	0	ENCFF573DQZ	/home/drk/tillage/datasets/human/chip/encode/ENCSR839SFJ/summary/ENCFF573DQZ.w5	32	2	mean	CHIP:SMARCA4:bipolar neuron originated from GM23338 treated with 0.5 ug/mL doxycycline hyclate for 4 days
+4071	0	ENCFF834UFV	/home/drk/tillage/datasets/human/chip/encode/ENCSR849YFO/summary/ENCFF834UFV.w5	32	2	mean	CHIP:H3K4me3:bipolar neuron originated from GM23338 treated with 0.5 ug/mL doxycycline hyclate for 4 days
+4175	0	ENCFF229IOE	/home/drk/tillage/datasets/human/chip/encode/ENCSR886KKK/summary/ENCFF229IOE.w5	32	2	mean	CHIP:EZH2phosphoT487:bipolar neuron originated from GM23338 treated with 0.5 ug/mL doxycycline hyclate for 4 days
+4188	0	ENCFF912TKR	/home/drk/tillage/datasets/human/chip/encode/ENCSR889GGV/summary/ENCFF912TKR.w5	32	2	mean	CHIP:POLR2AphosphoS5:bipolar neuron originated from GM23338 treated with 0.5 ug/mL doxycycline hyclate for 4 days
+4245	0	ENCFF346CWF	/home/drk/tillage/datasets/human/chip/encode/ENCSR905TYC/summary/ENCFF346CWF.w5	32	2	mean	CHIP:H3K27ac:bipolar neuron originated from GM23338 treated with 0.5 ug/mL doxycycline hyclate for 4 days
+4316	0	ENCFF588UZN	/home/drk/tillage/datasets/human/chip/encode/ENCSR928UVY/summary/ENCFF588UZN.w5	32	2	mean	CHIP:H2AFZ:neuron originated from H9
+4464	0	ENCFF897UZP	/home/drk/tillage/datasets/human/chip/encode/ENCSR983CSB/summary/ENCFF897UZP.w5	32	2	mean	CHIP:H2AFZ:bipolar neuron originated from GM23338 treated with 0.5 ug/mL doxycycline hyclate for 4 days
+80	0	ENCFF025HHG	/home/drk/tillage/datasets/human/dnase/encode/ENCSR000ENE/summary/coverage.w5	32	2	mean	DNASE:brain microvascular endothelial cell
+81	0	ENCFF353QSZ	/home/drk/tillage/datasets/human/dnase/encode/ENCSR000ENF/summary/coverage.w5	32	2	mean	DNASE:brain pericyte
+82	0	ENCFF443IYY	/home/drk/tillage/datasets/human/dnase/encode/ENCSR000ENG/summary/coverage.w5	32	2	mean	DNASE:smooth muscle cell of the brain vasculature female
+179	0	ENCFF735MKP	/home/drk/tillage/datasets/human/dnase/encode/ENCSR026EOM/summary/coverage.w5	32	2	mean	DNASE:brain female embryo (85 days)
+216	0	ENCFF657KLL	/home/drk/tillage/datasets/human/dnase/encode/ENCSR118WIQ/summary/coverage.w5	32	2	mean	DNASE:brain embryo (112 days)
+240	0	ENCFF064KBT	/home/drk/tillage/datasets/human/dnase/encode/ENCSR156CLC/summary/coverage.w5	32	2	mean	DNASE:brain female embryo (96 days)
+261	0	ENCFF378OWK	/home/drk/tillage/datasets/human/dnase/encode/ENCSR187PYY/summary/coverage.w5	32	2	mean	DNASE:brain female embryo (142 days)
+319	0	ENCFF536FNG	/home/drk/tillage/datasets/human/dnase/encode/ENCSR309FOO/summary/coverage.w5	32	2	mean	DNASE:brain female embryo (117 days)
+338	0	ENCFF003FBE	/home/drk/tillage/datasets/human/dnase/encode/ENCSR344FLH/summary/coverage.w5	32	2	mean	DNASE:brain female embryo (109 days)
+370	0	ENCFF947HEA	/home/drk/tillage/datasets/human/dnase/encode/ENCSR420RWU/summary/coverage.w5	32	2	mean	DNASE:brain male embryo (105 days)
+403	0	ENCFF468SMI	/home/drk/tillage/datasets/human/dnase/encode/ENCSR475VQD/summary/coverage.w5	32	2	mean	DNASE:brain male embryo (72 days) and male embryo (76 days)
+421	0	ENCFF482UKP	/home/drk/tillage/datasets/human/dnase/encode/ENCSR507GFJ/summary/coverage.w5	32	2	mean	DNASE:brain embryo (80 days)
+458	0	ENCFF503ZTL	/home/drk/tillage/datasets/human/dnase/encode/ENCSR572LDG/summary/coverage.w5	32	2	mean	DNASE:brain male embryo (101 day)
+469	0	ENCFF641HVS	/home/drk/tillage/datasets/human/dnase/encode/ENCSR595CSH/summary/coverage.w5	32	2	mean	DNASE:brain embryo (56 days) and male embryo (58 days)
+499	0	ENCFF361UTR	/home/drk/tillage/datasets/human/dnase/encode/ENCSR649KBB/summary/coverage.w5	32	2	mean	DNASE:brain male embryo (122 days)
+524	0	ENCFF225GCE	/home/drk/tillage/datasets/human/dnase/encode/ENCSR706IDL/summary/coverage.w5	32	2	mean	DNASE:midbrain male adult (78 years) and male adult (84 years)
+580	0	ENCFF643ARA	/home/drk/tillage/datasets/human/dnase/encode/ENCSR820XRX/summary/coverage.w5	32	2	mean	DNASE:brain female embryo (105 days)
+644	0	ENCFF622PZI	/home/drk/tillage/datasets/human/dnase/encode/ENCSR947POC/summary/coverage.w5	32	2	mean	DNASE:brain male embryo (104 days)
+1163	0	ENCFF210HSY	/home/drk/tillage/datasets/human/chip/encode/ENCSR000DTA/summary/ENCFF210HSY.w5	32	2	mean	CHIP:CTCF:brain microvascular endothelial cell
+1164	0	ENCFF256KXI	/home/drk/tillage/datasets/human/chip/encode/ENCSR000DTC/summary/ENCFF256KXI.w5	32	2	mean	CHIP:H3K4me3:brain microvascular endothelial cell
+1506	0	ENCFF707FCC	/home/drk/tillage/datasets/human/chip/encode/ENCSR018OGF/summary/ENCFF707FCC.w5	32	2	mean	CHIP:H3K9me3:brain female embryo (120 days)
+1739	0	ENCFF614MKK	/home/drk/tillage/datasets/human/chip/encode/ENCSR094NYB/summary/ENCFF614MKK.w5	32	2	mean	CHIP:H3K4me1:brain female embryo (120 days)
+1897	0	ENCFF942CMQ	/home/drk/tillage/datasets/human/chip/encode/ENCSR143MZL/summary/ENCFF942CMQ.w5	32	2	mean	CHIP:H3K4me3:brain male embryo (122 days)
+1909	0	ENCFF985OQZ	/home/drk/tillage/datasets/human/chip/encode/ENCSR146KXZ/summary/ENCFF985OQZ.w5	32	2	mean	CHIP:H3K9me3:brain female embryo (17 weeks)
+2623	0	ENCFF321KUJ	/home/drk/tillage/datasets/human/chip/encode/ENCSR386JEL/summary/ENCFF321KUJ.w5	32	2	mean	CHIP:H3K4me1:brain female embryo (17 weeks)
+2916	0	ENCFF139FPN	/home/drk/tillage/datasets/human/chip/encode/ENCSR479BPF/summary/ENCFF139FPN.w5	32	2	mean	CHIP:H3K27me3:brain female embryo (120 days)
+3380	0	ENCFF628RWE	/home/drk/tillage/datasets/human/chip/encode/ENCSR627STE/summary/ENCFF628RWE.w5	32	2	mean	CHIP:H3K27me3:brain male embryo (122 days)
+3864	0	ENCFF997IXW	/home/drk/tillage/datasets/human/chip/encode/ENCSR780FXX/summary/ENCFF997IXW.w5	32	2	mean	CHIP:H3K4me3:brain female embryo (17 weeks)
+4015	0	ENCFF495TLF	/home/drk/tillage/datasets/human/chip/encode/ENCSR829NJE/summary/ENCFF495TLF.w5	32	2	mean	CHIP:H3K9me3:brain male embryo (122 days)
+4133	0	ENCFF135VPT	/home/drk/tillage/datasets/human/chip/encode/ENCSR869WSC/summary/ENCFF135VPT.w5	32	2	mean	CHIP:H3K36me3:brain female embryo (17 weeks)
+4182	0	ENCFF988QYQ	/home/drk/tillage/datasets/human/chip/encode/ENCSR888JWS/summary/ENCFF988QYQ.w5	32	2	mean	CHIP:H3K36me3:brain male embryo (122 days)
+4509	0	ENCFF204VPY	/home/drk/tillage/datasets/human/chip/encode/ENCSR997YTW/summary/ENCFF204VPY.w5	32	2	mean	CHIP:H3K27me3:brain female embryo (17 weeks)
+4680	0	CNhs10617	/home/drk/tillage/datasets/human/cage/fantom/CNhs10617/summary/coverage.w5	384	1	sum	CAGE:brain, adult, pool1
+4980	0	CNhs11796	/home/drk/tillage/datasets/human/cage/fantom/CNhs11796/summary/coverage.w5	384	1	sum	CAGE:brain, adult,
+4981	0	CNhs11797	/home/drk/tillage/datasets/human/cage/fantom/CNhs11797/summary/coverage.w5	384	1	sum	CAGE:brain, fetal, pool1
+362	0	ENCFF083ELT	/home/drk/tillage/datasets/human/dnase/encode/ENCSR401ESD/summary/coverage.w5	32	2	mean	DNASE:tibial nerve female adult (51 year)
+543	0	ENCFF094FZF	/home/drk/tillage/datasets/human/dnase/encode/ENCSR754WNA/summary/coverage.w5	32	2	mean	DNASE:tibial nerve male adult (37 years)
+1931	0	ENCFF314DQL	/home/drk/tillage/datasets/human/chip/encode/ENCSR154GUK/summary/ENCFF314DQL.w5	32	2	mean	CHIP:POLR2A:tibial nerve female adult (51 year)
+1944	0	ENCFF134TOV	/home/drk/tillage/datasets/human/chip/encode/ENCSR157ZVP/summary/ENCFF134TOV.w5	32	2	mean	CHIP:H3K36me3:tibial nerve female adult (53 years)
+2408	0	ENCFF921FBI	/home/drk/tillage/datasets/human/chip/encode/ENCSR314SPW/summary/ENCFF921FBI.w5	32	2	mean	CHIP:H3K4me3:tibial nerve female adult (53 years)
+2782	0	ENCFF725SHA	/home/drk/tillage/datasets/human/chip/encode/ENCSR434XLP/summary/ENCFF725SHA.w5	32	2	mean	CHIP:CTCF:tibial nerve male adult (37 years)
+2892	0	ENCFF423FWZ	/home/drk/tillage/datasets/human/chip/encode/ENCSR469POZ/summary/ENCFF423FWZ.w5	32	2	mean	CHIP:CTCF:tibial nerve female adult (53 years)
+2918	0	ENCFF851LAU	/home/drk/tillage/datasets/human/chip/encode/ENCSR479GPU/summary/ENCFF851LAU.w5	32	2	mean	CHIP:H3K9me3:tibial nerve female adult (53 years)
+3212	0	ENCFF004UZT	/home/drk/tillage/datasets/human/chip/encode/ENCSR569SZK/summary/ENCFF004UZT.w5	32	2	mean	CHIP:EP300:tibial nerve female adult (51 year)
+3246	0	ENCFF469CEQ	/home/drk/tillage/datasets/human/chip/encode/ENCSR580XUK/summary/ENCFF469CEQ.w5	32	2	mean	CHIP:EP300:tibial nerve male adult (37 years)
+3338	0	ENCFF338MNH	/home/drk/tillage/datasets/human/chip/encode/ENCSR611YUJ/summary/ENCFF338MNH.w5	32	2	mean	CHIP:H3K27me3:tibial nerve female adult (53 years)
+3836	0	ENCFF420PYG	/home/drk/tillage/datasets/human/chip/encode/ENCSR771YJT/summary/ENCFF420PYG.w5	32	2	mean	CHIP:H3K27ac:tibial nerve female adult (53 years)
+3994	0	ENCFF991GMN	/home/drk/tillage/datasets/human/chip/encode/ENCSR822PJT/summary/ENCFF991GMN.w5	32	2	mean	CHIP:CTCF:tibial nerve female adult (51 year)
+4075	0	ENCFF486TEG	/home/drk/tillage/datasets/human/chip/encode/ENCSR850RVA/summary/ENCFF486TEG.w5	32	2	mean	CHIP:H3K4me1:tibial nerve female adult (53 years)
+4330	0	ENCFF188HNM	/home/drk/tillage/datasets/human/chip/encode/ENCSR935XOT/summary/ENCFF188HNM.w5	32	2	mean	CHIP:POLR2A:tibial nerve female adult (53 years)
+5230	0	CNhs13449	/home/drk/tillage/datasets/human/cage/fantom/CNhs13449/summary/coverage.w5	384	1	sum	CAGE:optic nerve,
