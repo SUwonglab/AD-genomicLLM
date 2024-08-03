@@ -57,6 +57,11 @@ Above the above three steps, one should get `chr[CID]_[PID]_maternal.fa` and `ch
 
 In the above example case, it is `chr19_003_S_1057_maternal.fa` and `chr19_003_S_1057_paternal.fa`.
 
+## Extracting genomic LLM features
+
+
+
+
 ## Processing MRI image data
 
 The sMRI images of 246 individuals were downloaded from ADNI database (entry name: ADNI1_Complete_1Yr_1.5T) in .nii format. We put the .nii raw data from each individual each time point in a separate folder. Note that some individuals may have multiple .nii files from the same time point. The image data are organized as the structure below
@@ -96,8 +101,6 @@ aparcstats2table --subjects 003_S_1057_bs ... 007_S_0128_sc_bs  --hemi lh --meas
 [meas] - imaging phenotype (thickness, area, volume etc)
 ```
 We provided the extracted imaging phenotypes (thickness, area, and volume) of 246 individuals across 3 time points in the `MRI` folder.
-
-
 
 
 
