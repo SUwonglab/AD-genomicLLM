@@ -121,7 +121,6 @@ if __name__=="__main__":
     parser.add_argument('--gene_name', type=str, required=True, help='Name of the gene.')
     parser.add_argument('--llm_path', type=str, required=True, help='Path to Enformer feature files.')
     parser.add_argument('--refGene_path', type=str, required=True, help='Path to the refGene hg19 TSS bed file.')
-    parser.add_argument('--res_path', type=str, required=True, help='Path to save the results.')
 
     args = parser.parse_args()
     
