@@ -11,7 +11,7 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 import argparse
 
-def get_subjects_info(merge_info_path, mri_file, wgs_file):
+def get_subjects_info(merge_info_path='ADNIMERGE_01Jun2023.csv', mri_file='MRI/ADNI1_Complete_1Yr_1.5T_7_18_2023.csv', wgs_file='wgs_subject_id.txt'):
     merge_info = pd.read_csv(merge_info_path)  # Info for each participant
 
     # Subjects who have screening, 6 month, and 12 month
@@ -114,9 +114,6 @@ if __name__ == "__main__":
     parser.add_argument('--gene_name', type=str, required=True, help='Name of the gene.')
     parser.add_argument('--llm_path', type=str, required=True, help='Path to Enformer feature files.')
     parser.add_argument('--refGene_path', type=str, required=True, help='Path to the refGene hg19 TSS bed file.')
-    parser.add_argument('--mri_file', type=str, required=True, help='Path to MRI data file.')
-    parser.add_argument('--wgs_file', type=str, required=True, help='Path to WGS subjects file.')
-    parser.add_argument('--merge_info_path', type=str, required=True, help='Path to the ADNIMERGE info file.')
     parser.add_argument('--res_path', type=str, required=True, help='Path to save the results.')
 
     args = parser.parse_args()
