@@ -113,6 +113,14 @@ We provided the extracted imaging phenotypes (thickness, area, and volume) of 24
 
 ## Associating genotype to imaging phenotypes
 
-
+```shell
+python3 get_img_association.py --img_feat_type [img_feat_type] --gene_name [gene_name] --llm_path [llm_path] --refGene_path [refGene_path] --res_path [res_path]
+[img_feat_type] - MRI image feature type. e.g., 'thickness'
+[gene_name] - gene of interest, e.g., APOE
+[llm_path] - path to the folder containing genomic LLM feature .npy files
+[refGene_path] -path to the refGene file, e.g., refGene_hg19_TSS.bed
+[res_path] - path to save the association results
+```
+`res_path` will contain the association metric (e.g., Pearson's correlation) between a gene and a specific brain region of interest (ROI).
 
 
