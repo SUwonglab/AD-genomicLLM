@@ -139,7 +139,7 @@ If you have any questions regarding our code or data, please do not hesitate to 
 # Cite
 If you used our work in your research, please consider citing our paper
 
-Qiao Liu, Wanwen Zeng, Hongtu Zhu, Lexin Li, Wing Hung Wong. Leveraging Genomic Large Language Models to Enhance Causal Genotype-Brain-Clinical Pathways in Alzheimer’s Disease [J]. medRxiv. 2024.
+Qiao Liu, Wanwen Zeng, Hongtu Zhu, Lexin Li, Wing Hung Wong. [Leveraging Genomic Large Language Models to Enhance Causal Genotype-Brain-Clinical Pathways in Alzheimer’s Disease](https://www.medrxiv.org/content/10.1101/2024.10.03.24314824v2) [J]. medRxiv. 2024.
 
 # License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
