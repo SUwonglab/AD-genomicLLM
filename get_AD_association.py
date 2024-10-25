@@ -53,7 +53,7 @@ def get_subjects_info(merge_info_path='ADNIMERGE_01Jun2023.csv', mri_file='MRI/A
     return subjects_selected, labels, labels_bl, labels_m06, labels_m12
 
 
-def get_enformer_features(subjects_selected, llm_path, chrom):
+def get_enformer_feats(subjects_selected, llm_path, chrom):
     """
     Loads Enformer features for given subjects.
     
